@@ -3,14 +3,14 @@ import TuistPluginSwiftFormatFramework
 
 extension MainCommand {
     /// A command to print the current version of SwiftLint.
-    struct VersionSwiftLintCommand: ParsableCommand {
+    struct VersionSwiftFormatCommand: ParsableCommand {
         static var configuration = CommandConfiguration(
-            commandName: "version-swiftFormat",
-            abstract: "Outputs the current version of SwiftLint."
+            commandName: "version-swiftformat",
+            abstract: "Outputs the current version of SwiftFormat."
         )
-        
+
         func run() throws {
-            VersionSwiftLintService()
+            VersionSwiftFormatService()
                 .run()
         }
     }

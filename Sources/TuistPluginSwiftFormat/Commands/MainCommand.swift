@@ -6,10 +6,9 @@ struct MainCommand: ParsableCommand {
         commandName: "plugin-swiftformat",
         abstract: "A plugin that extends Tuist with SwiftFormat.",
         subcommands: [
-//            SwiftLintCommand.self, // lints code
+            VersionSwiftFormatCommand.self, // prints the version of SwiftFormat
             VersionCommand.self, // prints version of the plugin
-            VersionSwiftLintCommand.self, // prints version of SwiftLint
         ],
-        defaultSubcommand: VersionCommand.self
+        defaultSubcommand: VersionSwiftFormatCommand.self
     )
 }
