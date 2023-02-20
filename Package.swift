@@ -8,7 +8,7 @@ let package = Package(
     platforms: [.macOS(.v11)],
     products: [
         .executable(
-            name: "tuist-lint",
+            name: "tuist-swiftformat",
             targets: ["TuistPluginSwiftFormat"]
         )
     ],
